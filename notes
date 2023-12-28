@@ -1,1 +1,10 @@
+/*WRITE A SQL STATEMENT TO CREATE THE MEMBER TABLE*/
 
+CREATE TABLE Member (
+   ID INT PRIMARY KEY,
+   FirstName VARCHAR(100),
+   MiddleInitial CHAR(1),
+   LastName VARCHAR(100),
+   DateOfBirth DATE,
+   AnnualPledge DECIMAL(9,2) CHECK (AnnualPledge >=0 AND AnnualPledge <=999999.99));
+   
